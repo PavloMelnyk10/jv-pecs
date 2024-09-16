@@ -33,7 +33,7 @@ public class MachineServiceImpl<T extends Machine> implements MachineService<T> 
     }
 
     @Override
-    public void startWorking(List<? extends Machine> machines) {
+    public void startWorking(List<? extends T> machines) {
         for (Machine machine : machines) {
             machine.doWork();
         }
